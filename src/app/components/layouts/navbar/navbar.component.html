@@ -1,0 +1,78 @@
+<div class="navbar-area fixed-top">
+
+  <div class="mobile-nav">
+    <a routerLink="/"
+       class="logo">
+      <img src="assets/img/logo.png"
+           alt="Logo">
+    </a>
+  </div>
+
+  <div class="main-nav">
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand"
+           routerLink="/">
+          <img src="assets/img/logo.png"
+               alt="Logo">
+        </a>
+
+        <div class="collapse navbar-collapse mean-menu"
+             id="navbarSupportedContent">
+          <ul class="navbar-nav">
+
+            <li class="nav-item"><a routerLink="/"
+                 class="nav-link"
+                 routerLinkActive="active"
+                 [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+
+            <li class="nav-item"><a routerLink="/about"
+                 class="nav-link"
+                 routerLinkActive="active"
+                 [routerLinkActiveOptions]="{exact: false}">Oferta</a></li>
+
+            <li class="nav-item"><a routerLink="/about"
+                 class="nav-link"
+                 routerLinkActive="active"
+                 [routerLinkActiveOptions]="{exact: true}">O nas</a></li>
+
+            <li class="nav-item"><a routerLink="/price"
+                 class="nav-link"
+                 routerLinkActive="active"
+                 [routerLinkActiveOptions]="{exact: true}">Cennik</a></li>
+
+
+
+            <!-- sub-menu -->
+            <!-- <li class="nav-item">
+              <a href="javascript:void(0)"
+                 class="nav-link dropdown-toggle">Blogs</a>
+
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a routerLink="/blog"
+                     class="nav-link"
+                     routerLinkActive="active"
+                     [routerLinkActiveOptions]="{exact: true}">Blog</a></li>
+
+                <li class="nav-item"><a routerLink="/blog-details"
+                     class="nav-link"
+                     routerLinkActive="active"
+                     [routerLinkActiveOptions]="{exact: true}">Blog Details</a></li>
+              </ul>
+            </li> -->
+
+
+            <li class="nav-item"><a routerLink="contact"
+                 class="nav-link"
+                 routerLinkActive="active"
+                 [routerLinkActiveOptions]="{exact: true}">Kontakt</a></li>
+          </ul>
+
+          <div class="side-nav">
+            <a routerLink="/appointment">Umów Spotkanie</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
