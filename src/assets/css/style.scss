@@ -226,8 +226,8 @@ button {
     }
 }
 .menu-shrink {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 /*-- End Navbar --*/
 
@@ -237,11 +237,13 @@ button {
 }
 .banner-area {
     height: 830px;
+    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
 .banner-item {
     .banner-left {
         margin-top: 60px;
@@ -294,6 +296,14 @@ button {
         }
     }
 }
+
+.animated-banner {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: relative;
+}
+
 @keyframes banner-animation {
     0% {
         transform: translate(0, 0);
