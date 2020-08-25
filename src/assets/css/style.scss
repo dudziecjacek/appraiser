@@ -578,7 +578,7 @@ button {
 /*-- Practice --*/
 .section-title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: -7px;
 
     span {
@@ -603,6 +603,7 @@ button {
 }
 .practice-item {
     text-align: center;
+    min-height: 500px;
     margin-bottom: 30px;
     padding: 45px 15px;
     background-color: #272974;
@@ -722,11 +723,11 @@ button {
             color: $black-color;
 
             &:before {
-                width: 50%;
+                width: 51%;
                 opacity: 1;
             }
             &:after {
-                width: 50%;
+                width: 51%;
                 opacity: 1;
             }
         }
@@ -766,7 +767,7 @@ button {
             list-style-type: none;
             display: block;
             position: relative;
-            margin-bottom: 70px;
+            margin-bottom: 40px;
 
             &:last-child {
                 margin-bottom: 0;
@@ -791,7 +792,7 @@ button {
                     weight: 700;
                     family: $heading-font;
                 }
-                margin-bottom: 18px;
+                margin-bottom: 10px;
                 color: $white-color;
             }
             p {
@@ -918,7 +919,9 @@ button {
 
 /*-- Team --*/
 .team-area {
-    padding-bottom: 190px;
+    padding-bottom: 100px;
+    background-image: url("../img/custom/hammer_1920.jpg");
+    background-size: cover;
 }
 .team-item {
     margin-bottom: 30px;
@@ -946,7 +949,7 @@ button {
             padding-top: 10px;
             padding-bottom: 10px;
             background-color: #272974;
-            max-width: 155px;
+            max-width: 90px;
             margin-right: auto;
             margin-left: auto;
             border-radius: 30px;
@@ -1036,8 +1039,8 @@ button {
     position: relative;
     padding-top: 50px;
     padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     &:before {
         position: absolute;
@@ -1050,6 +1053,7 @@ button {
         opacity: 1;
     }
     &:after {
+        display: none; //hidden address
         position: absolute;
         content: "";
         left: 0;
@@ -1188,7 +1192,7 @@ button {
     color: $white-color;
     background-color: $gold-color;
     padding: 16px 40px;
-    border: 0;
+    border: 1px solid transparent;
     position: relative;
     z-index: 1;
     transition: $transition;
@@ -1203,7 +1207,7 @@ button {
         opacity: 0;
         z-index: -1;
         transition: $transition;
-        background-color: $black-color;
+        background-color: #272974;
     }
     &:after {
         position: absolute;
@@ -1215,17 +1219,18 @@ button {
         opacity: 0;
         z-index: -1;
         transition: $transition;
-        background-color: $black-color;
+        background-color: #272974;
     }
     &:hover {
-        color: $white-color;
+        color: #fca21a;
+        border-color: #fca21a;
 
         &:before {
-            width: 50%;
+            width: 51%;
             opacity: 1;
         }
         &:after {
-            width: 50%;
+            width: 51%;
             opacity: 1;
         }
     }
@@ -1476,6 +1481,7 @@ footer {
         height: 100%;
         left: 0;
         top: 0;
+        // background-color: $white-color;
         background-color: #272974;
         opacity: 0.99;
     }
@@ -1487,7 +1493,7 @@ footer {
                 display: block;
 
                 img {
-                    margin-bottom: 0px;
+                    margin-bottom: 10px;
                     width: 80%;
                 }
             }
@@ -3492,6 +3498,10 @@ footer {
 
 /*-- Map --*/
 .map-area {
+    padding-left: 0;
+    padding-right: 0;
+    border: 10px solid #fca21a;
+    border-bottom: none;
     iframe {
         width: 100%;
         height: 500px;
