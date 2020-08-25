@@ -21,29 +21,29 @@ import { TermsConditionsComponent } from './components/pages/terms-conditions/te
 import { ContactComponent } from './components/pages/contact/contact.component';
 
 const routes: Routes = [
-    {path: '', component: HomeOneComponent},
-    {path: 'home-two', component: HomeTwoComponent},
-    {path: 'home-three', component: HomeThreeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'attorney', component: AttorneyComponent},
-    {path: 'attorney-details', component: AttorneyDetailsComponent},
-    {path: 'case-study', component: CaseStudyComponent},
-    {path: 'case-study-details', component: CaseStudyDetailsComponent},
-    {path: 'blog', component: BlogComponent},
-    {path: 'blog-details', component: BlogDetailsComponent},
-    {path: 'practice', component: PracticeComponent},
-    {path: 'practice-details', component: PracticeDetailsComponent},
-    {path: 'appointment', component: AppointmentComponent},
-    {path: 'testimonial', component: TestimonialComponent},
-    {path: 'faq', component: FaqComponent},
-    {path: 'error', component: ErrorComponent},
-    {path: 'privacy-policy', component: PrivacyPolicyComponent},
-    {path: 'terms-conditions', component: TermsConditionsComponent},
-    {path: 'contact', component: ContactComponent}
+  { path: '', component: HomeOneComponent },
+  { path: 'home-two', component: HomeTwoComponent },
+  { path: 'home-three', component: HomeThreeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'attorney', component: AttorneyComponent },
+  { path: 'attorney-details', component: AttorneyDetailsComponent },
+  { path: 'case-study', component: CaseStudyComponent },
+  { path: 'case-study-details', component: CaseStudyDetailsComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'blog-details', component: BlogDetailsComponent },
+  { path: 'practice', component: PracticeComponent },
+  { path: 'practice-details', component: PracticeDetailsComponent },
+  { path: 'appointment', component: AppointmentComponent },
+  { path: 'testimonial', component: TestimonialComponent },
+  { path: 'faq', component: FaqComponent },
+  { path: 'error', component: ErrorComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'terms-conditions', component: TermsConditionsComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

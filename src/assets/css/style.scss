@@ -87,6 +87,11 @@ img {
 .pb-100 {
     padding-bottom: 100px;
 }
+
+.mt-m100 {
+    margin-top: -100px;
+}
+
 button {
     &:focus {
         outline: 0;
@@ -110,6 +115,7 @@ button {
             margin-right: auto;
 
             .nav-item {
+                cursor: pointer;
                 .dropdown-menu {
                     background: #272974;
 
@@ -1136,6 +1142,9 @@ button {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    h2 {
+        color: white;
+    }
 }
 .contact-wrap {
     max-width: 970px;
