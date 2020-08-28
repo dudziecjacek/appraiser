@@ -268,6 +268,15 @@ button {
                 weight: 900;
             }
         }
+        h2.subheader {
+            font-size: 36px;
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+                font-size: 34px;
+            }
+            @media only screen and (max-width: 768px) {
+                font-size: 22px;
+            }
+        }
         p {
             margin-bottom: 40px;
             color: #e0e0e0;
@@ -1205,6 +1214,7 @@ button {
         }
         .form-control {
             background-color: rgba(255, 255, 255, 0.2);
+            // background-color: rgba(39, 41, 116, 0.8);
             border: 1px solid $gold-color;
             border-radius: 0;
             height: 60px;
@@ -3677,7 +3687,7 @@ footer {
         border-radius: 50%;
         transition: 0.5s all ease;
         margin-right: 28px;
-        box-shadow: 0px 0px 14px 0px $gold-color;
+        box-shadow: 0px 0px 14px 0px #272974;
 
         &:hover {
             background-color: $black-color;
