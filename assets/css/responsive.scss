@@ -25,14 +25,14 @@
     /*----- Home Page 1 -----*/
     /*-- Navbar --*/
     .mobile-nav .logo {
-        width: 80px;
+        width: 210px;
     }
     .mobile-nav.mean-container .mean-nav ul li a.active {
         color: $gold-color;
     }
     .mobile-nav nav .navbar-nav {
-        height: 350px;
-        overflow-y: scroll;
+        height: 250px;
+        // overflow-y: scroll;
     }
     .side-nav {
         display: none;
@@ -1426,14 +1426,14 @@
     /*----- Home Page 1 -----*/
     /*-- Navbar --*/
     .mobile-nav .logo {
-        width: 75px;
+        width: 210px;
     }
     .mobile-nav.mean-container .mean-nav ul li a.active {
         color: $gold-color;
     }
     .mobile-nav nav .navbar-nav {
-        height: 350px;
-        overflow-y: scroll;
+        height: 250px;
+        // overflow-y: scroll;
     }
     .side-nav {
         display: none;
@@ -1656,7 +1656,7 @@
 
     /*-- Team --*/
     .team-area {
-        padding-bottom: 130px;
+        padding-bottom: 70px;
     }
     .team-item {
         .team-inner {

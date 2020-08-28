@@ -87,6 +87,15 @@ img {
 .pb-100 {
     padding-bottom: 100px;
 }
+
+.mt-m100 {
+    margin-top: -100px;
+
+    @media only screen and (max-width: 768px) {
+        margin-top: -50px;
+    }
+}
+
 button {
     &:focus {
         outline: 0;
@@ -110,6 +119,7 @@ button {
             margin-right: auto;
 
             .nav-item {
+                cursor: pointer;
                 .dropdown-menu {
                     background: #272974;
 
@@ -226,8 +236,9 @@ button {
     }
 }
 .menu-shrink {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid $gold-color;
 }
 /*-- End Navbar --*/
 
@@ -237,11 +248,13 @@ button {
 }
 .banner-area {
     height: 830px;
+    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
 .banner-item {
     .banner-left {
         margin-top: 60px;
@@ -294,6 +307,14 @@ button {
         }
     }
 }
+
+.animated-banner {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: relative;
+}
+
 @keyframes banner-animation {
     0% {
         transform: translate(0, 0);
@@ -568,7 +589,7 @@ button {
 /*-- Practice --*/
 .section-title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: -7px;
 
     span {
@@ -593,6 +614,7 @@ button {
 }
 .practice-item {
     text-align: center;
+    min-height: 500px;
     margin-bottom: 30px;
     padding: 45px 15px;
     background-color: #272974;
@@ -600,6 +622,14 @@ button {
     overflow: hidden;
     color: $white-color;
     transition: $transition;
+
+    @media only screen and (max-width: 992px) {
+        min-height: 340px;
+    }
+
+    @media only screen and (max-width: 576px) {
+        min-height: 340px;
+    }
 
     &:hover {
         background-color: #fca21a;
@@ -712,11 +742,11 @@ button {
             color: $black-color;
 
             &:before {
-                width: 50%;
+                width: 51%;
                 opacity: 1;
             }
             &:after {
-                width: 50%;
+                width: 51%;
                 opacity: 1;
             }
         }
@@ -756,7 +786,7 @@ button {
             list-style-type: none;
             display: block;
             position: relative;
-            margin-bottom: 70px;
+            margin-bottom: 40px;
 
             &:last-child {
                 margin-bottom: 0;
@@ -781,7 +811,7 @@ button {
                     weight: 700;
                     family: $heading-font;
                 }
-                margin-bottom: 18px;
+                margin-bottom: 10px;
                 color: $white-color;
             }
             p {
@@ -908,8 +938,21 @@ button {
 
 /*-- Team --*/
 .team-area {
-    padding-bottom: 190px;
+    padding-bottom: 100px;
+    background-image: url("../img/custom/hammer_1920.jpg");
+    background-size: cover;
+    @media only screen and (max-width: 576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
+
+.team-item-container {
+    @media only screen and (max-width: 576px) {
+        display: none;
+    }
+}
+
 .team-item {
     margin-bottom: 30px;
 
@@ -936,7 +979,7 @@ button {
             padding-top: 10px;
             padding-bottom: 10px;
             background-color: #272974;
-            max-width: 155px;
+            max-width: 90px;
             margin-right: auto;
             margin-left: auto;
             border-radius: 30px;
@@ -1026,8 +1069,8 @@ button {
     position: relative;
     padding-top: 50px;
     padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     &:before {
         position: absolute;
@@ -1040,6 +1083,7 @@ button {
         opacity: 1;
     }
     &:after {
+        display: none; //hidden address
         position: absolute;
         content: "";
         left: 0;
@@ -1052,6 +1096,13 @@ button {
         background-color: #c3b59f;
     }
 }
+
+.location-item-container {
+    @media only screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
 .location-item {
     margin-bottom: 30px;
     position: relative;
@@ -1122,6 +1173,9 @@ button {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    h2 {
+        color: white;
+    }
 }
 .contact-wrap {
     max-width: 970px;
@@ -1178,7 +1232,7 @@ button {
     color: $white-color;
     background-color: $gold-color;
     padding: 16px 40px;
-    border: 0;
+    border: 1px solid transparent;
     position: relative;
     z-index: 1;
     transition: $transition;
@@ -1193,7 +1247,7 @@ button {
         opacity: 0;
         z-index: -1;
         transition: $transition;
-        background-color: $black-color;
+        background-color: #272974;
     }
     &:after {
         position: absolute;
@@ -1205,17 +1259,18 @@ button {
         opacity: 0;
         z-index: -1;
         transition: $transition;
-        background-color: $black-color;
+        background-color: #272974;
     }
     &:hover {
-        color: $white-color;
+        color: #fca21a;
+        border-color: #fca21a;
 
         &:before {
-            width: 50%;
+            width: 51%;
             opacity: 1;
         }
         &:after {
-            width: 50%;
+            width: 51%;
             opacity: 1;
         }
     }
@@ -1466,6 +1521,7 @@ footer {
         height: 100%;
         left: 0;
         top: 0;
+        // background-color: $white-color;
         background-color: #272974;
         opacity: 0.99;
     }
@@ -1473,11 +1529,14 @@ footer {
         margin-bottom: 30px;
 
         .footer-logo {
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
             a {
                 display: block;
 
                 img {
-                    margin-bottom: 0px;
+                    margin-bottom: 10px;
                     width: 80%;
                 }
             }
@@ -2578,7 +2637,7 @@ footer {
                 left: 0;
                 top: 0;
                 z-index: -1;
-                border: 10px solid #fca21a;
+                border: 10px solid $gold-color;
                 background-color: #373535;
             }
         }
@@ -3482,6 +3541,13 @@ footer {
 
 /*-- Map --*/
 .map-area {
+    padding-left: 0;
+    padding-right: 0;
+    border: 10px solid #fca21a;
+    border-bottom: none;
+    @media only screen and (max-width: 778px) {
+        border: 5px solid #fca21a;
+    }
     iframe {
         width: 100%;
         height: 500px;
