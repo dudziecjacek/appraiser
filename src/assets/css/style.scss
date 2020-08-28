@@ -90,6 +90,10 @@ img {
 
 .mt-m100 {
     margin-top: -100px;
+
+    @media only screen and (max-width: 768px) {
+        margin-top: -50px;
+    }
 }
 
 button {
@@ -234,6 +238,7 @@ button {
 .menu-shrink {
     padding-top: 2px;
     padding-bottom: 2px;
+    border-bottom: 2px solid $gold-color;
 }
 /*-- End Navbar --*/
 
@@ -618,6 +623,14 @@ button {
     color: $white-color;
     transition: $transition;
 
+    @media only screen and (max-width: 992px) {
+        min-height: 340px;
+    }
+
+    @media only screen and (max-width: 576px) {
+        min-height: 340px;
+    }
+
     &:hover {
         background-color: #fca21a;
         transform: translate(0, -10px);
@@ -928,7 +941,18 @@ button {
     padding-bottom: 100px;
     background-image: url("../img/custom/hammer_1920.jpg");
     background-size: cover;
+    @media only screen and (max-width: 576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
+
+.team-item-container {
+    @media only screen and (max-width: 576px) {
+        display: none;
+    }
+}
+
 .team-item {
     margin-bottom: 30px;
 
@@ -1072,6 +1096,13 @@ button {
         background-color: #c3b59f;
     }
 }
+
+.location-item-container {
+    @media only screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
 .location-item {
     margin-bottom: 30px;
     position: relative;
@@ -1498,6 +1529,9 @@ footer {
         margin-bottom: 30px;
 
         .footer-logo {
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
             a {
                 display: block;
 
@@ -2603,7 +2637,7 @@ footer {
                 left: 0;
                 top: 0;
                 z-index: -1;
-                border: 10px solid #fca21a;
+                border: 10px solid $gold-color;
                 background-color: #373535;
             }
         }
@@ -3511,6 +3545,9 @@ footer {
     padding-right: 0;
     border: 10px solid #fca21a;
     border-bottom: none;
+    @media only screen and (max-width: 778px) {
+        border: 5px solid #fca21a;
+    }
     iframe {
         width: 100%;
         height: 500px;

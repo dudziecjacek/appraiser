@@ -6,10 +6,10 @@
           <div class="footer-logo">
             <a routerLink="/"><img src="assets/img/logo.png"
                    alt="Logo"></a>
-            <p>Nasz zespół jest zawsze do Państwa dyspozycji, aby zapewnić najlepszą i skuteczną obsługę. Jeśli chcesz
-              dowiedzieć się więcej o naszej kancelarii, możesz nas połączyć za pośrednictwem mediów
-              społecznościowych.</p>
           </div>
+          <p>Nasz zespół jest zawsze do Państwa dyspozycji, aby zapewnić najlepszą i skuteczną obsługę. Jeśli chcesz
+            dowiedzieć się więcej o naszej kancelarii, możesz nas połączyć za pośrednictwem mediów
+            społecznościowych.</p>
         </div>
       </div>
 
@@ -19,20 +19,20 @@
             <h3>Mapa Strony</h3>
 
             <ul>
-              <li><a routerLink="/"><i class="icofont-simple-right"></i>Home</a></li>
-              <li><a routerLink="about"><i class="icofont-simple-right"></i>Oferta</a></li>
-              <li><a routerLink="blog"><i class="icofont-simple-right"></i>O Nas</a></li>
-              <li><a routerLink="attorney"><i class="icofont-simple-right"></i>Lokalizacja</a></li>
-              <li><a routerLink="testimonial"><i class="icofont-simple-right"></i>Kontakt</a></li>
+              <li><a (click)="onClick('home')"><i class="icofont-simple-right"></i>Home</a></li>
+              <li><a (click)="onClick('offer')"><i class="icofont-simple-right"></i>Oferta</a></li>
+              <li><a (click)="onClick('about')"><i class="icofont-simple-right"></i>O Nas</a></li>
+              <li><a (click)="onClick('localization')"><i class="icofont-simple-right"></i>Lokalizacja</a></li>
+              <li><a (click)="onClick('contact')"><i class="icofont-simple-right"></i>Kontakt</a></li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="col-sm-6 col-lg-5">
+      <div class="col-sm-10 col-lg-5">
         <div class="footer-item">
           <div class="footer-find">
-            <h3>Znajdź nas</h3>
+            <h3>Dane kontaktowe</h3>
 
             <ul>
               <li><i class="icofont-location-pin"></i><a href="https://goo.gl/maps/zFNTUHKKnGkq58ey5"

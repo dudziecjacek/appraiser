@@ -10,6 +10,7 @@ export class NavbarComponent {
   constructor() { }
 
   public onClick(elementId: string): void {
+    console.log('ok');
     document.querySelector('#' + elementId).scrollIntoView();
   }
 }
