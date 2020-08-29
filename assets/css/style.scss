@@ -38,6 +38,7 @@ $all-size: 16px;
 $white-color: #ffffff;
 $gold-color: #fca21a;
 $black-color: #333333;
+$blue-color: #272974;
 
 /*-- Default CSS --*/
 body {
@@ -110,7 +111,7 @@ button {
 /*----- Home Page 1 -----*/
 /*-- Navbar --*/
 .main-nav {
-    background-color: #272974;
+    background-color: $blue-color;
     transition: $transition;
 
     nav {
@@ -121,7 +122,7 @@ button {
             .nav-item {
                 cursor: pointer;
                 .dropdown-menu {
-                    background: #272974;
+                    background: $blue-color;
 
                     li {
                         a {
@@ -626,7 +627,7 @@ button {
     min-height: 500px;
     margin-bottom: 30px;
     padding: 45px 15px;
-    background-color: #272974;
+    background-color: $blue-color;
     position: relative;
     overflow: hidden;
     color: $white-color;
@@ -775,7 +776,7 @@ button {
 
 /*-- Expertise --*/
 .expertise-area {
-    background-color: #272974;
+    background-color: $blue-color;
 
     .section-title {
         h2 {
@@ -987,7 +988,7 @@ button {
             padding: 0;
             padding-top: 10px;
             padding-bottom: 10px;
-            background-color: #272974;
+            background-color: $blue-color;
             max-width: 90px;
             margin-right: auto;
             margin-left: auto;
@@ -1166,7 +1167,7 @@ button {
     }
     .location-link {
         display: block;
-        color: #272974;
+        color: $blue-color;
         margin-top: 10px;
 
         &:hover {
@@ -1257,7 +1258,7 @@ button {
         opacity: 0;
         z-index: -1;
         transition: $transition;
-        background-color: #272974;
+        background-color: $blue-color;
     }
     &:after {
         position: absolute;
@@ -1269,7 +1270,7 @@ button {
         opacity: 0;
         z-index: -1;
         transition: $transition;
-        background-color: #272974;
+        background-color: $blue-color;
     }
     &:hover {
         color: #fca21a;
@@ -1532,11 +1533,17 @@ footer {
         left: 0;
         top: 0;
         // background-color: $white-color;
-        background-color: #272974;
+        background-color: $blue-color;
         opacity: 0.99;
     }
     .footer-item {
         margin-bottom: 30px;
+
+        .footer-location-text {
+            @media only screen and (max-width: 400px) {
+                letter-spacing: -0.5px;
+            }
+        }
 
         .footer-logo {
             @media only screen and (max-width: 768px) {
@@ -1645,8 +1652,10 @@ footer {
                         color: $white-color;
 
                         &:hover {
-                            color: $gold-color;
-                            letter-spacing: 1px;
+                            @media only screen and (min-width: 768px) {
+                                color: $gold-color;
+                                letter-spacing: 1px;
+                            }
                         }
                     }
                 }
@@ -2256,7 +2265,7 @@ footer {
             ul {
                 margin: 0;
                 padding: 0;
-                background-color: #272974;
+                background-color: $blue-color;
                 display: inline-block;
                 padding: 12px 30px;
                 border-radius: 10px;
@@ -2581,7 +2590,7 @@ footer {
 
 /*-- Case Details Tab --*/
 .case-details-tab {
-    background-color: #272974;
+    background-color: $blue-color;
 
     .case-details-tab-item {
         h2 {
@@ -3687,11 +3696,138 @@ footer {
         border-radius: 50%;
         transition: 0.5s all ease;
         margin-right: 28px;
-        box-shadow: 0px 0px 14px 0px #272974;
+        box-shadow: 0px 0px 14px 0px $blue-color;
 
         &:hover {
             background-color: $black-color;
         }
     }
 }
+
+.mob-nav-menu {
+    width: 100%;
+    background-color: $blue-color;
+}
+
+.mob-nav {
+    @media only screen and (min-width: 992px) {
+        display: none;
+    }
+
+    background-color: $blue-color;
+    border-bottom: 1px solid $gold-color;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    img {
+        height: 40px;
+    }
+}
+
+.mob-nav-menu {
+    ul {
+        border-bottom: 1px solid $gold-color;
+        transition: 0.5s;
+    }
+    .nav-item {
+        padding: 10px;
+        text-align: center;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+#nav-icon4 {
+    width: 55px;
+    height: 35px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon4 span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+/* Icon 4 */
+
+#nav-icon4 {
+    margin-top: 5px;
+}
+
+#nav-icon4 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -7px;
+    left: 5px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 32px;
+    left: 5px;
+}
+
 /*----- End Back To Top -----*/
