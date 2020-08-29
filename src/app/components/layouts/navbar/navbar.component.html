@@ -1,23 +1,59 @@
 <div class="navbar-area fixed-top">
 
-  <div class="mobile-nav">
+  <!-- <div class="mobile-nav">
     <a routerLink="/"
        class="logo">
       <img src="assets/img/logo-small.png"
            alt="Logo">
     </a>
+  </div> -->
+  <div class="mob-nav">
+    <img src="assets/img/logo-small.png"
+         alt="Logo">
+    <div id="nav-icon4"
+         (click)="toggleOpen()"
+         [ngClass]="status ? 'open' : ''"> >
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div *ngIf="status"
+       class="mob-nav-menu"
+       id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item"
+          (click)="onClick('home'); toggleOpen()"><a href="#home">Home</a></li>
+
+      <li class="nav-item"
+          (click)="onClick('offer'); toggleOpen()"><a href="#offer">Oferta</a></li>
+
+      <li class="nav-item"
+          (click)="onClick('about'); toggleOpen()"><a href="#about">O nas</a></li>
+
+      <li class="nav-item"
+          (click)="onClick('localization'); toggleOpen()"><a href="#localization">Lokalizacja</a></li>
+
+      <li class="nav-item"
+          (click)="onClick('contact'); toggleOpen()"><a href="#contact">Kontakt</a></li>
+    </ul>
+
+    <div class="side-nav">
+      <a class="scale-in-center"
+         href="#contact">Umów Spotkanie</a>
+    </div>
   </div>
 
   <div class="main-nav">
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand"
-           routerLink="/">
+        <a class="navbar-brand">
           <img src="assets/img/logo.png"
                alt="Logo">
         </a>
 
-        <div class="collapse navbar-collapse mean-menu"
+        <div class="collapse navbar-collapse"
              id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item"

@@ -6,11 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  status = false;
 
   constructor() { }
 
   public onClick(elementId: string): void {
     console.log('ok');
-    document.querySelector('#' + elementId).scrollIntoView();
+    document.querySelector('#' + elementId).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  toggleOpen() {
+    this.status = !this.status;
   }
 }

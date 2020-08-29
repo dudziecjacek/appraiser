@@ -312,10 +312,7 @@
         top: -50px;
     }
     .location-bg {
-        padding-top: 30px;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 20px 0;
     }
     .location-item {
         padding-left: 90px;
@@ -2645,5 +2642,11 @@
         .s-s-three {
             top: 0;
         }
+    }
+}
+
+div.page-map-mob {
+    @media only screen and (max-width: 768px) {
+        display: none;
     }
 }
