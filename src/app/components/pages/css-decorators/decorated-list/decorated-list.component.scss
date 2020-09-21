@@ -1,0 +1,60 @@
+@import "~src/assets/css/variables.scss";
+
+.list-type3 {
+    margin: 0 auto;
+    width: 600px;
+    margin-left: 236px;
+}
+.list-type3 li {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-family: "Raleway", sans-serif;
+    transition: background-color 1.5s ease;
+}
+.list-type3 li {
+    padding: 0 60px 0 12px;
+    background: $blue-color;
+    color: #fff;
+    text-decoration: none;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 100%;
+    text-align: start;
+}
+
+.list-type3 li:before {
+    content: "";
+    float: left;
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-color: transparent $blue-color transparent transparent;
+    border-style: solid;
+    border-width: 18px 12px 18px 0;
+}
+
+.list-type3 li:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    background: $gold-color;
+    box-shadow: -1px -1px 2px #004977;
+}
+.list-type3 li:hover {
+    // background: #555;
+}
+
+.list-type3 li:hover:before {
+    border-color: transparent $gold-color transparent transparent;
+}

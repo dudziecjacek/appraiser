@@ -31,14 +31,7 @@ This files table contents are outlined below>>>>>
 ** - Preloader CSS
 ** - Back to Top CSS
 */
-$common-font: "Poppins", sans-serif;
-$heading-font: "Playfair Display", serif;
-$transition: 0.5s all ease;
-$all-size: 16px;
-$white-color: #ffffff;
-$gold-color: #fca21a;
-$black-color: #333333;
-$blue-color: #272974;
+@import "./variables.scss";
 
 /*-- Default CSS --*/
 body {
@@ -245,7 +238,9 @@ button {
 
 /*-- Banner --*/
 .banner-img-one {
-    background-image: url("../img/home-one/home-bg1.jpg");
+    // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    //     url("../img/home-one/home-bg1.jpg");
+    background: url("../img/home-one/home-bg1.jpg");
 }
 .banner-area {
     height: 830px;
@@ -266,7 +261,8 @@ button {
             font: {
                 size: 48px;
                 family: $heading-font;
-                weight: 900;
+                weight: 700;
+                letter-spacing: 2.5px;
             }
         }
         h2.subheader {
@@ -776,7 +772,8 @@ button {
 
 /*-- Expertise --*/
 .expertise-area {
-    background-color: $blue-color;
+    // background-color: $blue-color;
+    background-image: url(../img/custom/about_1920.png);
 
     .section-title {
         h2 {
@@ -3828,6 +3825,62 @@ footer {
     transform: rotate(-45deg);
     top: 32px;
     left: 5px;
+}
+
+.sample-estate-appraisal {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1.65em;
+        color: $blue-color;
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        transition: 0.2s;
+        margin: 0;
+        padding-left: 1.5em;
+        position: relative;
+
+        &:after {
+            content: "";
+            height: 0.4em;
+            width: 0.4em;
+            background: $blue-color;
+            display: block;
+            position: absolute;
+            transform: rotate(45deg);
+            top: 0.55em;
+            left: 0;
+        }
+    }
+
+    li:hover {
+        color: $blue-color;
+        text-decoration: underline;
+    }
+}
+
+.row p {
+    text-align: justify;
+}
+
+.m-t-150 {
+    margin-top: 150px;
+}
+
+p.mb-40 {
+    margin-bottom: 40px;
+}
+
+span.highlight {
+    // font-weight: bold;
+    color: $gold-color;
 }
 
 /*----- End Back To Top -----*/

@@ -25,6 +25,9 @@ import { ErrorComponent } from './components/pages/error/error.component';
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
 import { TermsConditionsComponent } from './components/pages/terms-conditions/terms-conditions.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { AstrodividerComponent } from './components/pages/css-decorators/astrodivider/astrodivider.component';
+import { DecoratedListComponent } from './components/pages/css-decorators/decorated-list/decorated-list.component';
+import { PriceListComponent } from './components/pages/css-decorators/price-list/price-list.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,10 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     ErrorComponent,
     PrivacyPolicyComponent,
     TermsConditionsComponent,
-    ContactComponent
+    ContactComponent,
+    AstrodividerComponent,
+    DecoratedListComponent,
+    PriceListComponent
   ],
   imports: [
     BrowserModule,
