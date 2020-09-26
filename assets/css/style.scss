@@ -31,14 +31,7 @@ This files table contents are outlined below>>>>>
 ** - Preloader CSS
 ** - Back to Top CSS
 */
-$common-font: "Poppins", sans-serif;
-$heading-font: "Playfair Display", serif;
-$transition: 0.5s all ease;
-$all-size: 16px;
-$white-color: #ffffff;
-$gold-color: #fca21a;
-$black-color: #333333;
-$blue-color: #272974;
+@import "./variables.scss";
 
 /*-- Default CSS --*/
 body {
@@ -46,6 +39,7 @@ body {
     color: $black-color;
     background-color: $white-color;
     font-size: $all-size;
+    overflow-x: hidden;
 }
 h1,
 h2,
@@ -245,7 +239,9 @@ button {
 
 /*-- Banner --*/
 .banner-img-one {
-    background-image: url("../img/home-one/home-bg1.jpg");
+    // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    //     url("../img/home-one/home-bg1.jpg");
+    background: url("../img/home-one/home-bg1.jpg");
 }
 .banner-area {
     height: 830px;
@@ -266,7 +262,8 @@ button {
             font: {
                 size: 48px;
                 family: $heading-font;
-                weight: 900;
+                weight: 700;
+                letter-spacing: 2.5px;
             }
         }
         h2.subheader {
@@ -607,7 +604,6 @@ button {
         color: $gold-color;
         font-weight: 600;
         font-size: 14px;
-        margin-bottom: 10px;
     }
     h2 {
         font: {
@@ -776,7 +772,10 @@ button {
 
 /*-- Expertise --*/
 .expertise-area {
-    background-color: $blue-color;
+    // background-color: $blue-color;
+    background-image: url(../img/custom/about_1920.png);
+    padding-left: 20px;
+    padding-right: 20px;
 
     .section-title {
         h2 {
@@ -958,7 +957,7 @@ button {
 }
 
 .team-item-container {
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 991px) {
         display: none;
     }
 }
@@ -1533,7 +1532,8 @@ footer {
         left: 0;
         top: 0;
         // background-color: $white-color;
-        background-color: $blue-color;
+        // background-color: $blue-color;
+    background-image: url(../img/custom/about_1920.png);
         opacity: 0.99;
     }
     .footer-item {
@@ -3828,6 +3828,62 @@ footer {
     transform: rotate(-45deg);
     top: 32px;
     left: 5px;
+}
+
+.sample-estate-appraisal {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1.65em;
+        color: $blue-color;
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        transition: 0.2s;
+        margin: 0;
+        padding-left: 1.5em;
+        position: relative;
+
+        &:after {
+            content: "";
+            height: 0.4em;
+            width: 0.4em;
+            background: $blue-color;
+            display: block;
+            position: absolute;
+            transform: rotate(45deg);
+            top: 0.55em;
+            left: 0;
+        }
+    }
+
+    li:hover {
+        color: $blue-color;
+        text-decoration: underline;
+    }
+}
+
+.row p {
+    text-align: justify;
+}
+
+.m-t-150 {
+    margin-top: 150px;
+}
+
+p.mb-40 {
+    margin-bottom: 40px;
+}
+
+span.highlight {
+    // font-weight: bold;
+    color: $gold-color;
 }
 
 /*----- End Back To Top -----*/
