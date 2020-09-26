@@ -46,3 +46,17 @@
     font-style: normal;
     color: $gold-color;
 }
+
+.astrodivider i.isInverted {
+  color: $blue-color;
+}
+
+.astrodivider span.isInverted {
+  background-color: white;
+    box-shadow: 0 2px 4px white;
+}
+
+.astrodividermask.isInverted:after {
+    box-shadow: 0 0 8px white;
+
+}

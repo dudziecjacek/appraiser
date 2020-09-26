@@ -1,4 +1,5 @@
 <div class="astrodivider">
-  <div class="astrodividermask"></div>
-  <span><i>§</i></span>
+  <div class="astrodividermask"
+       [ngClass]="{isInverted: isInverted}"></div>
+  <span [ngClass]="{isInverted: isInverted}"><i [ngClass]="{isInverted: isInverted}">§</i></span>
 </div>
