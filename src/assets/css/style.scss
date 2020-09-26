@@ -774,6 +774,8 @@ button {
 .expertise-area {
     // background-color: $blue-color;
     background-image: url(../img/custom/about_1920.png);
+    padding-left: 20px;
+    padding-right: 20px;
 
     .section-title {
         h2 {
@@ -955,7 +957,7 @@ button {
 }
 
 .team-item-container {
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 991px) {
         display: none;
     }
 }
