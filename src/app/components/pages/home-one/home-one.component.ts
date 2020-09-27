@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home-one',
   templateUrl: './home-one.component.html',
   styleUrls: ['./home-one.component.scss']
 })
-export class HomeOneComponent implements OnInit {
+export class HomeOneComponent {
+  isTileOneSelected: boolean;
+  isTileTwoSelected: boolean;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  toggleTile(tileNumber: number) {
 
+    if (tileNumber === 1) {
+      this.isTileTwoSelected = false;
+      this.isTileOneSelected = !this.isTileOneSelected;
+    } else {
+      if (tileNumber === 2) {
+        this.isTileOneSelected = false;
+        this.isTileTwoSelected = !this.isTileTwoSelected;
+      }
+    }
+  }
 }

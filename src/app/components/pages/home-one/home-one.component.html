@@ -53,7 +53,7 @@
       <h2>Oferta</h2>
     </div>
 
-    <div class="column">
+    <div class="column wow fadeInUp">
       <p class="mb-40">Wycena nieruchomości realizowana jest w formie <strong>operatu szacunkowego</strong> zgodne z
         obowiązującymi
         przepisami i
@@ -66,12 +66,12 @@
 
       <div class="row">
         <div class="sample-estate-appraisal col-lg-6 wow fadeInUp">
-          <h3>Przykłady wycenianych nieruchomości:</h3>
+          <h3 class="section-subtitle">Przykłady wycenianych nieruchomości:</h3>
           <ul>
             <li>nieruchomości lokalowe (lokale mieszkalne, lokale użytkowe),</li>
             <li>spółdzielcze własnościowe prawa do lokalu,</li>
             <li>nieruchomości gruntowe zabudowane,</li>
-            <li>nieruchomości gruntowe niezabudow,</li>
+            <li>nieruchomości gruntowe niezabudowane,</li>
             <li>nieruchomości rolne,</li>
             <li>nieruchomości komercyjne (biurowce, magazyny, obiekty handlowe, hotele),</li>
             <li>grunty inwestycyjne,</li>
@@ -80,7 +80,7 @@
           <br>
         </div>
         <div class="sample-estate-appraisal col-lg-6 wow fadeInUp">
-          <h3>Przykładowe cele wyceny:</h3>
+          <h3 class="section-subtitle">Przykładowe cele wyceny:</h3>
           <ul>
             <li>sprzedaż bądź zamiana nieruchomości</li>
             <li>zabezpieczenie kredytu</li>
@@ -101,70 +101,21 @@
       <app-astrodivider></app-astrodivider>
 
     </div>
-    <div class="column">
-      <div class="section-title wow fadeInUp column">
+    <div class="column wow fadeInUp">
+      <div class="section-title column">
         <h2>Cennik</h2>
-        </div>
-        <p>Koszt opracowania operatu szacunkowego ustalany jest indywidualnie z Zamawiającym usługę. Cena za usługę
-          ustalana jest w
-          umowie w formie pisemnej.</p>
-        <app-price-list class="wow fadeInUp"></app-price-list>
+      </div>
+      <p>Koszt opracowania operatu szacunkowego ustalany jest indywidualnie z Zamawiającym usługę. Cena za usługę
+        ustalana jest w
+        umowie w formie pisemnej.</p>
+      <app-price-list></app-price-list>
     </div>
-      <!-- <h5>Koszt zależy od następujących czynników:</h5>
+    <!-- <h5>Koszt zależy od następujących czynników:</h5>
       <div class="sample-estate-appraisal col-lg-6 wow fadeInUp">
         <app-decorated-list></app-decorated-list>
       </div> -->
   </div>
 </section>
-
-<!-- <div class="help-area pb-70">
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="help-item help-left">
-          <img src="assets/img/home-one/5.jpg"
-               alt="Help">
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="help-item">
-          <div class="help-right">
-            <h2>We Provide Qualified Attorneys For Your Assistance </h2>
-            <p>The Whole Team of Lyzo Law Firm brings a strong and fearless attitude to all the clients they assist.
-              And, to make sure that you win, our team will provide you with High-quality service.</p>
-            <div class="help-inner-left">
-              <ul>
-                <li><i class="flaticon-checkmark"></i> Browse Our Website</li>
-                <li><i class="flaticon-checkmark"></i> Choose Services</li>
-              </ul>
-            </div>
-
-            <div class="help-inner-right">
-              <ul>
-                <li><i class="flaticon-checkmark"></i> Quick Reply</li>
-                <li><i class="flaticon-checkmark"></i> Best Performances</li>
-              </ul>
-            </div>
-
-            <div class="help-signature">
-              <img src="assets/img/home-one/4.png"
-                   alt="Signature">
-            </div>
-
-            <a class="cmn-btn"
-               routerLink="/practice">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="help-shape">
-      <img src="assets/img/home-one/6.png"
-           alt="Shape">
-    </div>
-  </div>
-</div> -->
 
 
 <section class="expertise-area pb-100 pt-100 pl-20"
@@ -179,7 +130,8 @@
           <p>Firma oferuje swoim klientom kompleksowe i solidne <span class="highlight">usługi w zakresie wyceny
               nieruchomości.</span> Oferta skierowana
             jest do
-            osób fizycznych i prawnych, instytucji państwowych oraz innych podmiotów działających na rynku nieruchomości.
+            osób fizycznych i prawnych, instytucji państwowych oraz innych podmiotów działających na rynku
+            nieruchomości.
           <p>
             Sporządzane opracowania mogą być wykorzystane na <span class="highlight">potrzeby inwestycyjne, kredytowe,
               sądowe lub egzekucyjne</span>, w
@@ -195,14 +147,14 @@
           </p>
         </div>
       </div>
-  
+
     </div>
     <app-astrodivider [isInverted]="true"></app-astrodivider>
 
-    <div class="section-title text-center">
+    <div class="section-title text-center wow fadeInUp">
       <h2>O mnie</h2>
     </div>
-    <div class="row align-items-center justify-content-between">
+    <div class="row align-items-center justify-content-between wow fadeInUp">
       <div class="col-lg-9 pl-0 pr-0">
         <div class="expertise-item">
           <p>Rzeczoznawca majątkowy posiadający <span class="highlight">uprawnienia zawodowe nr 7716</span> nadane przez
@@ -229,9 +181,6 @@
             działalność w zakresie czynności
             rzeczoznawstwa
             majątkowego.</p>
-          <p>
-            Certyfikaty...
-          </p>
         </div>
       </div>
 
@@ -258,131 +207,83 @@
         </div>
       </div>
     </div>
+    <h3 class="order-terms">
+      Certyfikaty
+    </h3>
   </div>
 </section>
 
-<!-- <section class="portfolio-area ptb-100">
-  <div class="container">
-    <div class="section-title">
-      <span>PORTFOLIO</span>
-      <h2>Check Out Our Popular Case Studies.</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6 col-lg-4">
-        <div class="portfolio-item">
-          <img src="assets/img/home-one/portfolio/1.jpg"
-               alt="Portfolio">
-
-          <div class="portfolio-inner">
-            <span>Crime</span>
-            <h3><a routerLink="/case-study-details">Critical Murder Case</a></h3>
-            <p>15 Feb 2021</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4">
-        <div class="portfolio-item">
-          <img src="assets/img/home-one/portfolio/2.jpg"
-               alt="Portfolio">
-
-          <div class="portfolio-inner">
-            <span>Rights</span>
-            <h3><a routerLink="/case-study-details">Children Rights</a></h3>
-            <p>16 Feb 2021</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
-        <div class="portfolio-item">
-          <img src="assets/img/home-one/portfolio/3.jpg"
-               alt="Portfolio">
-
-          <div class="portfolio-inner">
-            <span>Finance</span>
-            <h3><a routerLink="/case-study-details">Money Loundering</a></h3>
-            <p>17 Feb 2021</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center">
-      <a class="cmn-btn"
-         routerLink="/case-study">See More</a>
-    </div>
-  </div>
-</section> -->
-
 <section class="team-area ptb-100"
          id="localization">
-  <div class="section-title">
-    <h2>Lokalizacja</h2>
-  </div>
-  <div class="container justify-content-center map-area wow fadeInUp">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1253.885023350707!2d17.030127158306897!3d51.0573336807737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc3bcf3e62efd%3A0xa3e2ee5f00d52ed7!2s%C5%81azarewicz%20Nieruchomo%C5%9Bci%20Kancelaria%20Rzeczoznawcy%20Maj%C4%85tkowego%20Sylwia%20%C5%81azarewicz!5e0!3m2!1spl!2spl!4v1601138092917!5m2!1spl!2spl"
-        width="600"
-        height="450"
-        frameborder="0"
-        style="border:0;"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"></iframe>
-  </div>
-  <!-- <div class="container justify-content-center">
+  <div class="column container justify-content-center">
     <div class="section-title">
-      <h2>Poznaj naszych specjalistów</h2>
+      <h2 class="wow fadeInUp">Dokumenty</h2>
+    </div>
+    <p class="wow fadeInUp">Dla właściwego przeprowadzenia procesu wyceny rzeczoznawca majątkowy potrzebuje dokumentów,
+      które są niezbędne, aby
+      w
+      sposób rzetelny i dokładny sporządzić operat szacunkowy. Rodzaj tych dokumentów zależy od przedmiotu, zakresu i celu
+      wyceny. Stanowią one załączniki do operatu szacunkowego. Dokumenty powinien dostarczyć zamawiający wycenę. Istnieje
+      możliwość zlecenia pozyskania dokumentów rzeczoznawcy majątkowemu za dodatkowym wynagrodzeniem.</p>
+    <h3 class="section-subtitle wow fadeInUp">
+      PODSTAWOWE DOKUMENTY NIEZBĘDNE DO WYKONANIA WYCENY
+    </h3>
+    <div class="row justify-content-center wow fadeInUp">
+      <div class="col-sm-6 col-lg-4">
+        <div class="practice-item"
+             [ngClass]="{isActive: isTileOneSelected}"
+             (click)="toggleTile(1)">
+          <div class="practice-icon">
+            <i class="flaticon-money-bag"></i>
+                </div>
+                <h3>Rynek Pierwotny</h3>
+                <img class="practice-shape-one"
+                     src="assets/img/home-one/7.png"
+                     alt="Shape">
+                <img class="practice-shape-two"
+                     src="assets/img/home-one/8.png"
+                     alt="Shape">
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="practice-item"
+                   [ngClass]="{isActive: isTileTwoSelected}"
+                   (click)="toggleTile(2)">
+                <div class="practice-icon">
+                  <i class="flaticon-team"></i>
+                </div>
+                <h3>Rynek Wtórny</h3>
+                <img class="practice-shape-one"
+                     src="assets/img/home-one/7.png"
+                     alt="Shape">
+                <img class="practice-shape-two"
+                     src="assets/img/home-one/8.png"
+                     alt="Shape">
+              </div>
+            </div>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-sm-6 col-lg-3">
-        <div class="team-item wow fadeInUp"
-             data-wow-delay=".3s">
-          <img src="assets/img/home-one/team/1.jpg"
-               alt="Team">
-
-          <div class="team-inner">
-            <ul>
-              <li><a href="https://www.facebook.com/"
-                   target="_blank"><i class="icofont-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/"
-                   target="_blank"><i class="icofont-instagram"></i></a></li>
-              <li><a href="https://www.twitter.com/"
-                   target="_blank"><i class="icofont-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/"
-                   target="_blank"><i class="icofont-linkedin"></i></a></li>
-            </ul>
-            <h3><a routerLink="/attorney-details">Sylwia Hutnik</a></h3>
-            <span>Rzeczoznawca</span>
-          </div>
-        </div>
+      <div *ngIf="isTileOneSelected">
+        <app-document-tile [tileSelected]="1"></app-document-tile>
       </div>
-
-      <div class="col-sm-6 col-lg-3">
-        <div class="team-item wow fadeInUp">
-          <img src="assets/img/home-one/team/2.jpg"
-               alt="Team">
-
-          <div class="team-inner">
-            <ul>
-              <li><a href="https://www.facebook.com/"
-                   target="_blank"><i class="icofont-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/"
-                   target="_blank"><i class="icofont-instagram"></i></a></li>
-              <li><a href="https://www.twitter.com/"
-                   target="_blank"><i class="icofont-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/"
-                   target="_blank"><i class="icofont-linkedin"></i></a></li>
-            </ul>
-            <h3><a routerLink="/attorney-details">Paweł Hutnik</a></h3>
-            <span>Radca Prawny</span>
-          </div>
-        </div>
+      <div *ngIf="isTileTwoSelected">
+        <app-document-tile [tileSelected]="2"></app-document-tile>
       </div>
+      <app-astrodivider></app-astrodivider>
+      <div class="section-title">
+      <h2>Lokalizacja</h2>
     </div>
-  </div> -->
+    <div class="container justify-content-center map-area wow fadeInUp">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1253.885023350707!2d17.030127158306897!3d51.0573336807737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc3bcf3e62efd%3A0xa3e2ee5f00d52ed7!2s%C5%81azarewicz%20Nieruchomo%C5%9Bci%20Kancelaria%20Rzeczoznawcy%20Maj%C4%85tkowego%20Sylwia%20%C5%81azarewicz!5e0!3m2!1spl!2spl!4v1601138092917!5m2!1spl!2spl"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"></iframe>
+    </div>
+  </div>
 </section>
 
 <div class="contact-form pb-100">
@@ -437,12 +338,12 @@
     </div>
   </div>
 
-  <div class="container-fluid wow fadeInUp pt-100 mt-m100"
+  <div class="container-fluid pt-100 mt-m100"
        id="contact">
-    <div class="section-title text-center">
+    <div class="section-title text-center wow fadeInUp">
       <h2>Formularz kontaktowy</h2>
     </div>
-    <form id="contactForm">
+    <form id="contactForm wow fadeInUp">
       <div class="row contact-wrap">
         <div class="col-sm-6 col-lg-6">
           <div class="form-group">

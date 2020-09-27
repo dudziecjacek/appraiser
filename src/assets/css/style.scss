@@ -620,7 +620,7 @@ button {
 }
 .practice-item {
     text-align: center;
-    min-height: 500px;
+    min-height: 200px;
     margin-bottom: 30px;
     padding: 45px 15px;
     background-color: $blue-color;
@@ -628,13 +628,15 @@ button {
     overflow: hidden;
     color: $white-color;
     transition: $transition;
+    cursor: pointer;
+    border: 8px solid transparent;
 
     @media only screen and (max-width: 992px) {
-        min-height: 340px;
+        min-height: 200px;
     }
 
     @media only screen and (max-width: 576px) {
-        min-height: 340px;
+        min-height: 150px;
     }
 
     &:hover {
@@ -655,6 +657,11 @@ button {
             }
         }
     }
+
+    &.isActive {
+      border-color: $gold-color;
+    }
+
     .practice-icon {
         position: relative;
         z-index: 1;
@@ -708,6 +715,10 @@ button {
             weight: 600;
             size: 28px;
         }
+    }
+
+    &.isActive h3 {
+      text-decoration: underline;
     }
     p {
         margin-bottom: 25px;
@@ -949,7 +960,6 @@ button {
 .team-area {
     padding-bottom: 100px;
     background-image: url("../img/custom/hammer_1920.jpg");
-    background-size: cover;
     @media only screen and (max-width: 576px) {
         padding-left: 15px;
         padding-right: 15px;
@@ -3885,5 +3895,22 @@ span.highlight {
     // font-weight: bold;
     color: $gold-color;
 }
+
+  h3.section-subtitle { 
+    font-size: 1.65em;
+    color: #272974;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+
+    @media only screen and (max-width: 768px) {
+    font-size: 1.35em;
+    }
+
+    @media only screen and (max-width: 576px) {
+    font-size: 1.15em;
+    }
+  }
 
 /*----- End Back To Top -----*/

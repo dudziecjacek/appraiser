@@ -28,6 +28,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { AstrodividerComponent } from './components/pages/css-decorators/astrodivider/astrodivider.component';
 import { DecoratedListComponent } from './components/pages/css-decorators/decorated-list/decorated-list.component';
 import { PriceListComponent } from './components/pages/css-decorators/price-list/price-list.component';
+import { DocumentTileComponent } from './components/pages/document-tile/document-tile.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { PriceListComponent } from './components/pages/css-decorators/price-list
     ContactComponent,
     AstrodividerComponent,
     DecoratedListComponent,
-    PriceListComponent
+    PriceListComponent,
+    DocumentTileComponent
   ],
   imports: [
     BrowserModule,
