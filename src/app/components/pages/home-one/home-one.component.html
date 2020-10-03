@@ -213,8 +213,7 @@
   </div>
 </section>
 
-<section class="team-area ptb-100"
-         id="localization">
+<section class="team-area ptb-100">
   <div class="column container justify-content-center">
     <div class="section-title">
       <h2 class="wow fadeInUp">Dokumenty</h2>
@@ -222,8 +221,10 @@
     <p class="wow fadeInUp">Dla właściwego przeprowadzenia procesu wyceny rzeczoznawca majątkowy potrzebuje dokumentów,
       które są niezbędne, aby
       w
-      sposób rzetelny i dokładny sporządzić operat szacunkowy. Rodzaj tych dokumentów zależy od przedmiotu, zakresu i celu
-      wyceny. Stanowią one załączniki do operatu szacunkowego. Dokumenty powinien dostarczyć zamawiający wycenę. Istnieje
+      sposób rzetelny i dokładny sporządzić operat szacunkowy. Rodzaj tych dokumentów zależy od przedmiotu, zakresu i
+      celu
+      wyceny. Stanowią one załączniki do operatu szacunkowego. Dokumenty powinien dostarczyć zamawiający wycenę.
+      Istnieje
       możliwość zlecenia pozyskania dokumentów rzeczoznawcy majątkowemu za dodatkowym wynagrodzeniem.</p>
     <h3 class="section-subtitle wow fadeInUp">
       PODSTAWOWE DOKUMENTY NIEZBĘDNE DO WYKONANIA WYCENY
@@ -235,42 +236,43 @@
              (click)="toggleTile(1)">
           <div class="practice-icon">
             <i class="flaticon-money-bag"></i>
-                </div>
-                <h3>Rynek Pierwotny</h3>
-                <img class="practice-shape-one"
-                     src="assets/img/home-one/7.png"
-                     alt="Shape">
-                <img class="practice-shape-two"
-                     src="assets/img/home-one/8.png"
-                     alt="Shape">
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="practice-item"
-                   [ngClass]="{isActive: isTileTwoSelected}"
-                   (click)="toggleTile(2)">
-                <div class="practice-icon">
-                  <i class="flaticon-team"></i>
-                </div>
-                <h3>Rynek Wtórny</h3>
-                <img class="practice-shape-one"
-                     src="assets/img/home-one/7.png"
-                     alt="Shape">
-                <img class="practice-shape-two"
-                     src="assets/img/home-one/8.png"
-                     alt="Shape">
-              </div>
-            </div>
+          </div>
+          <h3>Rynek Pierwotny</h3>
+          <img class="practice-shape-one"
+               src="assets/img/home-one/7.png"
+               alt="Shape">
+          <img class="practice-shape-two"
+               src="assets/img/home-one/8.png"
+               alt="Shape">
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="practice-item"
+             [ngClass]="{isActive: isTileTwoSelected}"
+             (click)="toggleTile(2)">
+          <div class="practice-icon">
+            <i class="flaticon-team"></i>
+          </div>
+          <h3>Rynek Wtórny</h3>
+          <img class="practice-shape-one"
+               src="assets/img/home-one/7.png"
+               alt="Shape">
+          <img class="practice-shape-two"
+               src="assets/img/home-one/8.png"
+               alt="Shape">
+        </div>
+      </div>
     </div>
 
-      <div *ngIf="isTileOneSelected">
-        <app-document-tile [tileSelected]="1"></app-document-tile>
-      </div>
-      <div *ngIf="isTileTwoSelected">
-        <app-document-tile [tileSelected]="2"></app-document-tile>
-      </div>
-      <app-astrodivider></app-astrodivider>
-      <div class="section-title">
+    <div *ngIf="isTileOneSelected">
+      <app-document-tile [tileSelected]="1"></app-document-tile>
+    </div>
+    <div *ngIf="isTileTwoSelected">
+      <app-document-tile [tileSelected]="2"></app-document-tile>
+    </div>
+    <app-astrodivider></app-astrodivider>
+    <div id="localization"
+         class="section-title">
       <h2>Lokalizacja</h2>
     </div>
     <div class="container justify-content-center map-area wow fadeInUp">
