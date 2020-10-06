@@ -32,6 +32,7 @@ export class ContactFormComponent implements OnInit {
       .subscribe(response => {
         this.isMessageSent = true;
         this.showLoader = false;
+        this.FormData.reset();
       }, error => {
         console.warn(error.responseText);
         console.log({ error });
