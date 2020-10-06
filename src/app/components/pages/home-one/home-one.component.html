@@ -207,7 +207,8 @@
         </div>
       </div>
     </div>
-    <h3 class="order-terms">
+    <h3 *ngIf="false"
+        class="order-terms">
       Certyfikaty
     </h3>
   </div>
@@ -345,8 +346,8 @@
     <div class="section-title text-center wow fadeInUp">
       <h2>Formularz kontaktowy</h2>
     </div>
-    <form id="contactForm wow fadeInUp">
-      <div class="row contact-wrap">
+    <app-contact-form></app-contact-form>
+    <!-- <div class="row contact-wrap">
         <div class="col-sm-6 col-lg-6">
           <div class="form-group">
             <input type="text"
@@ -404,7 +405,6 @@
                     class="contact-btn">Wyślij Wiadomość</button>
           </div>
         </div>
-      </div>
-    </form>
+      </div> -->
   </div>
 </div>

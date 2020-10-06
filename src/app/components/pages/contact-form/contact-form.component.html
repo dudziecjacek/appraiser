@@ -1,0 +1,74 @@
+<form id="contactForm wow fadeInUp"
+      [formGroup]="FormData"
+      (ngSubmit)="onSubmit(FormData.value)">
+  <div class="row contact-wrap">
+    <div class="row contact-wrap">
+      <div class="col-sm-6 col-lg-6">
+        <div class="form-group">
+          <input type="text"
+                 name="name"
+                 id="name"
+                 class="form-control"
+                 placeholder="Twoje Imię i Nazwisko*"
+                 formControlName="Fullname">
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-6">
+        <div class="form-group">
+          <input type="email"
+                 name="email"
+                 id="email"
+                 class="form-control"
+                 placeholder="Twój Email*"
+                 formControlName="Email">
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-6">
+        <div class="form-group">
+          <input type="text"
+                 name="phone_number"
+                 id="phone_number"
+                 class="form-control"
+                 placeholder="Twój Nr Telefonu"
+                 formControlName="PhoneNumber">
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-6">
+        <div class="form-group">
+          <input type="text"
+                 name="msg_subject"
+                 id="msg_subject"
+                 class="form-control"
+                 placeholder="Temat*"
+                 formControlName="Subject">
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-12">
+        <div class="form-group">
+          <textarea name="message"
+                    class="form-control"
+                    id="message"
+                    cols="30"
+                    rows="8"
+                    placeholder="Opis Sprawy*"
+                    formControlName="Description"></textarea>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-12">
+        <div class="text-center">
+          <button type="submit"
+                  class="contact-btn"
+                  [disabled]="!FormData.valid">Wyślij Wiadomość</button>
+        </div>
+      </div>
+    </div>
+    <div class="message-confirm"
+         [ngClass]="{'hidden': !isMessageSent && !showLoader}">
+      {{ showLoader ? 'Wysyłam...' : 'Wiadomość została wysłana!'}}</div>
+  </div>
+</form>

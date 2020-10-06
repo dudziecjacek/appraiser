@@ -8,7 +8,7 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "prod": "ng build --prod --base-href https://dudziecjacek.github.io/appraiser/",
+        "prod": "ng build --prod --base-href #",
         "deploy": "npx angular-cli-ghpages --dir=dist/appraiser"
     },
     "private": true,

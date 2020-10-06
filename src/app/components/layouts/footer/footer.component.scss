@@ -1,10 +1,14 @@
 .container {
-    padding: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
+  padding: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 img {
-    margin-bottom: 10px;
-    width: 80%;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.footer-service a {
+  cursor: pointer;
 }
