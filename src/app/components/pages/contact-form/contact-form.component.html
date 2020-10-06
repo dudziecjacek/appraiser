@@ -59,7 +59,8 @@
         </div>
       </div>
 
-      <div class="col-md-12 col-lg-12">
+      <div *ngIf="!showLoader && !isMessageSent"
+           class="col-md-12 col-lg-12">
         <div class="text-center">
           <button type="submit"
                   class="contact-btn"
@@ -67,8 +68,9 @@
         </div>
       </div>
     </div>
-    <div class="message-confirm"
-         [ngClass]="{'hidden': !isMessageSent && !showLoader}">
+    <div *ngIf="showLoader || isMessageSent"
+         class="message-confirm"
+         [ngClass]="{'hidden': !isMessageSent && !showLoader, 'sent': isMessageSent}">
       {{ showLoader ? 'Wysyłam...' : 'Wiadomość została wysłana!'}}</div>
   </div>
 </form>
