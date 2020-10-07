@@ -71,6 +71,8 @@
     <div *ngIf="showLoader || isMessageSent"
          class="message-confirm"
          [ngClass]="{'hidden': !isMessageSent && !showLoader, 'sent': isMessageSent}">
-      {{ showLoader ? 'Wysyłam...' : 'Wiadomość została wysłana!'}}</div>
+      <div *ngIf="showLoader" class="spinner"></div>
+      <div *ngIf="!showLoader">Wiadomość została wysłana!</div>
+    </div>
   </div>
 </form>

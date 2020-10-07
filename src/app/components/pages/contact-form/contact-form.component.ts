@@ -12,7 +12,6 @@ export class ContactFormComponent implements OnInit {
   FormData: FormGroup;
   isMessageSent: boolean;
   showLoader: boolean;
-  dots = '';
 
   constructor(private builder: FormBuilder, private contact: ContactService) { }
 
@@ -33,6 +32,7 @@ export class ContactFormComponent implements OnInit {
         this.isMessageSent = true;
         this.showLoader = false;
         this.FormData.reset();
+        location.href = 'https://mailthis.to/confirm';
       }, error => {
         console.warn(error.responseText);
         console.log({ error });
