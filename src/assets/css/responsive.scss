@@ -310,6 +310,8 @@
     }
     .location-bg {
         padding: 20px 0;
+        
+        justify-content: center;
     }
     .location-item {
         padding-left: 90px;
@@ -1566,7 +1568,7 @@
         }
         h2 {
             font: {
-                size: 25px;
+                size: 30px;
             }
         }
     }
@@ -1670,6 +1672,7 @@
         padding-bottom: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        justify-content: center;
     }
     .location-item {
         padding-left: 90px;

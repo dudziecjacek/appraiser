@@ -968,6 +968,18 @@ button {
 
 .team-item-container {
   @media only screen and (max-width: 991px) {
+    width: 20vw;
+    margin: 0 auto;
+    order: -1;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 50vw;
+  }
+}
+
+.team-inner {
+  @media only screen and (max-width: 600px) {
     display: none;
   }
 }
@@ -3898,6 +3910,10 @@ span.highlight {
   color: $gold-color;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 h3.section-subtitle {
   font-size: 1.65em;
   color: #272974;
@@ -3905,6 +3921,10 @@ h3.section-subtitle {
   margin-bottom: 20px;
   margin-top: 50px;
   text-align: center;
+
+  &--left {
+  text-align: left;
+  }
 
   @media only screen and (max-width: 768px) {
     font-size: 1.35em;

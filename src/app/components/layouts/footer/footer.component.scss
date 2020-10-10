@@ -1,3 +1,5 @@
+@import "~src/assets/css/variables.scss";
+
 .container {
   padding: 30px;
   padding-left: 25px;
@@ -11,4 +13,8 @@ img {
 
 .footer-service a {
   cursor: pointer;
+}
+
+.footer-highlight {
+  color: $gold-color;
 }
