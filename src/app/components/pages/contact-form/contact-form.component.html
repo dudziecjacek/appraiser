@@ -10,7 +10,8 @@
                  id="name"
                  class="form-control"
                  placeholder="Twoje Imię*"
-                 formControlName="Fullname">
+                 formControlName="Fullname"
+                 maxlength="30">
         </div>
       </div>
 
@@ -21,18 +22,20 @@
                  id="email"
                  class="form-control"
                  placeholder="Twój Email*"
-                 formControlName="Email">
+                 formControlName="Email"
+                 maxlength="30">
         </div>
       </div>
 
       <div class="col-sm-6 col-lg-6">
         <div class="form-group">
-          <input type="text"
+          <input type="tel"
                  name="phone_number"
                  id="phone_number"
                  class="form-control"
                  placeholder="Twój Numer Telefonu"
-                 formControlName="PhoneNumber">
+                 formControlName="PhoneNumber"
+                 maxlength="15">
         </div>
       </div>
 
@@ -43,7 +46,8 @@
                  id="msg_subject"
                  class="form-control"
                  placeholder="Temat*"
-                 formControlName="Subject">
+                 formControlName="Subject"
+                 maxlength="30">
         </div>
       </div>
 
@@ -55,7 +59,8 @@
                     cols="30"
                     rows="8"
                     placeholder="Opis Sprawy*"
-                    formControlName="Description"></textarea>
+                    formControlName="Description"
+                    maxlength="2500"></textarea>
         </div>
       </div>
 
@@ -71,7 +76,8 @@
     <div *ngIf="showLoader || isMessageSent"
          class="message-confirm"
          [ngClass]="{'hidden': !isMessageSent && !showLoader, 'sent': isMessageSent}">
-      <div *ngIf="showLoader" class="spinner"></div>
+      <div *ngIf="showLoader"
+           class="spinner"></div>
       <div *ngIf="!showLoader">Wiadomość została wysłana!</div>
     </div>
   </div>
