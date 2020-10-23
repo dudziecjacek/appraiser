@@ -209,11 +209,14 @@
         </div>
       </div>
     </div>
-    <h3 *ngIf="false"
-        class="order-terms">
-      Certyfikaty
-    </h3>
-  </div>
+      <h3 class="order-terms">
+        Certyfikaty
+      </h3>
+      <a2p-gallery [galleryId]="sampleId">
+        <ngp-gallery-item [image]="image1"></ngp-gallery-item>
+        <ngp-gallery-item [image]="image2"></ngp-gallery-item>
+      </a2p-gallery>
+    </div>
 </section>
 
 <section class="team-area ptb-100">
@@ -411,3 +414,5 @@
       </div> -->
   </div>
 </div>
+
+<ngp-lightbox></ngp-lightbox>

@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { Angular2PhotoswipeModule } from 'angular2_photoswipe';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeOneComponent } from './components/pages/home-one/home-one.component';
@@ -40,7 +42,8 @@ import { ContactService } from './components/pages/contact-form/contact.service'
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    Angular2PhotoswipeModule
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]
