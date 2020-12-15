@@ -24,7 +24,6 @@
   }
 }
 
-
 .spinner,
 .spinner:after {
   border-radius: 50%;
@@ -33,6 +32,7 @@
 }
 .spinner {
   margin: 0 auto;
+  margin-top: -3px;
   font-size: 3px;
   position: relative;
   text-indent: -9999em;

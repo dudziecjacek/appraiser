@@ -9,7 +9,7 @@ import { HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ContactService {
-  private mailApi = 'https://mailthis.to/kontakt@lazarewicz-nieruchomosci.pl';
+  private mailApi = 'https://mailthis.to/lazarewicz.nieruchomosci@gmail.com';
 
   constructor(private http: HttpClient) { }
 
