@@ -14,6 +14,7 @@ export class HomeOneComponent implements OnInit {
   image4: Image;
   image5: Image;
   image6: Image;
+  image7: Image;
   isPdf: boolean[] = [false, false]
   sampleId: string;
 
@@ -85,6 +86,14 @@ export class HomeOneComponent implements OnInit {
     this.image6.id = 5;
     this.image6.size = `${this.image6.width}x${this.image6.height}`;
     this.image6.thumbUrl = './../../../../assets/img/documents/certificate6-thumb.png';
+
+    this.image7 = new Image();
+    this.image7.largeUrl = './../../../../assets/img/documents/certificate7.png';
+    this.image7.height = 1754;
+    this.image7.width = 2500;
+    this.image7.id = 6;
+    this.image7.size = `${this.image7.width}x${this.image7.height}`;
+    this.image7.thumbUrl = './../../../../assets/img/documents/certificate7-thumb.png';
   }
 
   togglePdf(index: number) {
