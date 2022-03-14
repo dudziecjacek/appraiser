@@ -68,27 +68,26 @@ h1.mainheader {
 ::ng-deep a2p-gallery {
   div {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 ::ng-deep ngp-gallery-item {
   &:nth-child(2) {
-    margin-left: 100px;
+    // margin-left: 100px;
 
     @media (max-width: 576px) {
-      margin-left: 50px;
+      // margin-left: 50px;
     }
   }
 
   img {
-  border: 2px solid $gold-color;
+    border: 2px solid $gold-color;
   }
 }
 
 ::ng-deep ngp-lightbox .pswp__button--share,
 ::ng-deep ngp-lightbox .pswp__button--zoom,
-::ng-deep ngp-lightbox .pswp__button--fs
- {
+::ng-deep ngp-lightbox .pswp__button--fs {
   display: none !important;
 }
 
@@ -340,5 +339,16 @@ h1.mainheader {
   }
   100% {
     left: -50%;
+  }
+}
+
+:host ::ng-deep .angular2_photoswipe {
+  flex-wrap: wrap;
+
+  ngp-gallery-item {
+    width: 33%;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
   }
 }
